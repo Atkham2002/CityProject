@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(name = "/district")
+//@RequestMapping(name = "/district")
 @RequiredArgsConstructor
 public class DistrictController {
 

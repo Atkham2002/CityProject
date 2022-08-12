@@ -6,7 +6,7 @@ import Data.all.city.service.CityService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/city")
+//@RequestMapping("/city")
 public class CityController {
 
     private final CityService cityService;

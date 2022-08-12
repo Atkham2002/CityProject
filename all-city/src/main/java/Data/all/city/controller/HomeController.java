@@ -7,7 +7,7 @@ import Data.all.city.service.HomeService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(name = "/home")
+//@RequestMapping(name = "/home")
 public class HomeController {
 
     private final HomeService homeService;

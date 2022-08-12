@@ -7,7 +7,7 @@ import Data.all.city.service.HumansService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(name = "/humans")
+//@RequestMapping(name = "/humans")
 public class HumansController {
 
     private final HumansService humansService;
