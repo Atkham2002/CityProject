@@ -4,17 +4,17 @@ import Data.all.city.dto.CityDto;
 import Data.all.city.dto.HomeDto;
 import Data.all.city.dto.ResponseDto;
 import Data.all.city.service.HomeService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequiredArgsConstructor
+
 //@RequestMapping(name = "/home")
 public class HomeController {
 
     private final HomeService homeService;
 
-    public HomeController(HomeService homeService) {
-        this.homeService = homeService;
-    }
 
     @PostMapping
     public ResponseDto addHome(@RequestBody HomeDto homeDto){
