@@ -15,7 +15,7 @@ public class DistrictController {
 
 
 
-    @PatchMapping
+    @PostMapping(name = "Path")
     public ResponseDto addDistrict(@RequestBody DistrictDto districtDto){
         return districtService.addDistrict(districtDto);
     }
