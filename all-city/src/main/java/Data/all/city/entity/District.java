@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.List;
@@ -22,9 +24,11 @@ public class District {
 
     private String name;
 
-    private Integer cityId;
+    @ManyToOne
+    private City cityId;
 
     @OneToMany(mappedBy = "districtId")
+    @Fetch(FetchMode.SUBSELECT)
     private List<Home> homes;
 
 }

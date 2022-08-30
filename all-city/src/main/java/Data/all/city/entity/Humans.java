@@ -24,6 +24,7 @@ public class Humans {
     @Column(name = "surname")
     private String surname;
 
-    private Integer homeId;
+    @ManyToOne
+    private Home homeId;
 
 }
