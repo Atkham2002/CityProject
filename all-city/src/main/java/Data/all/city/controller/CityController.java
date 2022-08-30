@@ -30,7 +30,7 @@ public class CityController {
         return cityService.getAll();
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseDto deleteCity(@PathVariable Integer id){
         return cityService.deleteById(id);
     }

@@ -29,7 +29,7 @@ public class HumansController {
         return humansService.getAllHumans();
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseDto deleteHuman(@PathVariable Integer id){
         return humansService.deleteByIdHumans(id);
     }

@@ -31,7 +31,7 @@ public class HomeController {
         return homeService.getAllHome();
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseDto deleteHome(@PathVariable Integer id){
         return homeService.deleteByIdHome(id);
     }
