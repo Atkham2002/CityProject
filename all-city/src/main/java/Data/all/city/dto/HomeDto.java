@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -13,9 +15,10 @@ public class HomeDto {
 
     private Integer id;
 
+    @NotBlank
     private String name;
 
-    private Integer districtId;
+    private DistrictDto districtId;
 
 
 }

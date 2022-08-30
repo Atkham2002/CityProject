@@ -3,19 +3,21 @@ package Data.all.city.controller;
 import Data.all.city.dto.DistrictDto;
 import Data.all.city.dto.ResponseDto;
 import Data.all.city.service.DistrictService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 //@RequestMapping(name = "/district")
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class DistrictController {
 
     private final DistrictService districtService;
 
+    public DistrictController(DistrictService districtService) {
+        this.districtService = districtService;
+    }
 
 
-    @PostMapping(name = "/Path")
+    @PostMapping
     public ResponseDto addDistrict(@RequestBody DistrictDto districtDto){
         return districtService.addDistrict(districtDto);
     }

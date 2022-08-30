@@ -5,22 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-@Builder
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseDto<T> {
+public class ValidatorDto {
 
-    private Integer code;
-
-    private Boolean success;
+    private String field;
 
     private String message;
-
-    private T data;
-
-    private List<ValidatorDto> errors;
 
 }

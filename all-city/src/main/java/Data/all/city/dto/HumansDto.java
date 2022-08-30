@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -13,10 +15,12 @@ public class HumansDto {
 
     private Integer id;
 
+    @NotBlank
     private String name;
 
+    @NotBlank
     private String surname;
 
-    private Integer homeId;
+    private HomeDto homeId;
 
 }

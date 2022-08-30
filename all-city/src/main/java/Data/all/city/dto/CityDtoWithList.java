@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 @Data
@@ -15,6 +16,7 @@ public class CityDtoWithList {
 
     private Integer id;
 
+    @NotBlank
     private String name;
 
     private List<DistrictDto> districtDtoList;
