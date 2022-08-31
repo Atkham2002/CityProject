@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 //@RequiredArgsConstructor
-//@RequestMapping(name = "/humans")
+@RequestMapping(value = "/humans")
 public class HumansController {
 
     private final HumansService humansService;

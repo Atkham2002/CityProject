@@ -3,18 +3,19 @@ package Data.all.city.controller;
 import Data.all.city.dto.CityDto;
 import Data.all.city.dto.ResponseDto;
 import Data.all.city.service.CityService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-//@RequiredArgsConstructor
-//@RequestMapping("/city")
+@RequiredArgsConstructor
+@RequestMapping("/city")
 public class CityController {
 
     private final CityService cityService;
 
-    public CityController(CityService cityService) {
-        this.cityService = cityService;
-    }
+//    public CityController(CityService cityService) {
+//        this.cityService = cityService;
+//    }
 
 
     @PostMapping

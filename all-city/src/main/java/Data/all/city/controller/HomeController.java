@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 //@RequiredArgsConstructor
 
-//@RequestMapping(name = "/home")
+@RequestMapping(value = "/home")
 public class HomeController {
 
     private final HomeService homeService;
